@@ -243,6 +243,7 @@ export default {
   },
   components: { NavLink, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, TagsBar, Pagination },
   created() {
+    console.log("我是home.vue");
     this.total = this.$sortPosts.length
   },
   beforeMount() {

@@ -12,8 +12,9 @@ const DOMAIN_NAME = 'fseller.com' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
-  theme: 'vdoing', // 使用npm主题包
-  // theme: resolve(__dirname, '../../vdoing'), // 使用本地主题包
+  base:"/blog/",
+  // theme: 'vdoing', // 使用npm主题包
+  theme: resolve(__dirname, '../../vdoing'), // 使用本地主题包
 
   locales: {
     '/': {
@@ -138,9 +139,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
 
     // bodyBgImg: [
-    //   'https://fastly.jsdelivr.net/gh/heBody/image_store/blog/20200507175828.jpeg',
-    //   'https://fastly.jsdelivr.net/gh/heBody/image_store/blog/20200507175845.jpeg',
-    //   'https://fastly.jsdelivr.net/gh/heBody/image_store/blog/20200507175846.jpeg'
+    //   'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
+    //   'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
+    //   'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
     // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
     // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~1.0, 默认0.5
     // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
@@ -173,7 +174,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://fastly.jsdelivr.net/gh/heBody/image_store/blog/20200103123203.jpg',
+      avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
       name: '彪哥',
       slogan: '爱好前端',
     },
@@ -185,26 +186,26 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com',
+          link: 'mailto:30363811@qq.com',
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
           link: 'https://github.com/heBody',
         },
-        {
-          iconClass: 'icon-erji',
-          title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173',
-        },
+        // {
+        //   iconClass: 'icon-erji',
+        //   title: '听音乐',
+        //   link: 'https://music.163.com/#/playlist?id=755597173',
+        // },
       ],
     },
 
     // 页脚信息
     footer: {
-      createYear: 2019, // 博客创建年份
+      createYear: 2016, // 博客创建年份
       copyrightInfo:
-        'Evan Xu | <a href="https://github.com/heBody/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
+        'Hesb | <a href="https://github.com/heBody/blob" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
@@ -329,9 +330,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         choosen: 'gitalk',
         options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'blog-gitalk-comment', // GitHub 仓库
+          clientID: 'e8ff5e2446063f5800b9',
+          clientSecret: 'b9a895b0dab55190cb6cf00afa6510ffda897eba',
+          repo: 'blog', // GitHub 仓库
           owner: 'heBody', // GitHub仓库所有者
           admin: ['heBody'], // 对仓库有写权限的人
           // distractionFreeMode: true,
