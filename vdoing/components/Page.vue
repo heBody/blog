@@ -62,7 +62,6 @@ export default {
   props: ['sidebarItems'],
   components: { PageEdit, PageNav, ArticleInfo, Catalogue, UpdateArticle, RightMenu },
   created() {
-    console.log("我是page.vue");
     this.updateBarConfig = this.$themeConfig.updateBar
   },
   computed: {
