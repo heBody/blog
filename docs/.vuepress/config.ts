@@ -174,7 +174,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
+      avatar: '/img/head.jpg',
       name: '彪哥',
       slogan: '爱好前端',
     },
