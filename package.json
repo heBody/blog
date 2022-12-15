@@ -2,13 +2,14 @@
   "name": "ivy-blog",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs",
+    "dev": "node --max_old_space_size=4096 ./node_modules/vuepress/cli.js dev docs",
+    "build": "node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs && npm run copy",
     "deploy": "bash deploy.sh",
     "editFm": "node utils/editFrontmatter.js",
     "baiduPush": "node utils/baiduPush.js https://heBody.com && bash baiduPush.sh",
     "publish": "cd ./vdoing && npm publish && cd .. && yarn updateTheme",
-    "updateTheme": "yarn remove blog && rm -rf node_modules && yarn && yarn add blog -D"
+    "updateTheme": "yarn remove blog && rm -rf node_modules && yarn && yarn add blog -D",
+    "copy": "node ./utils/copyDist.js"
   },
   "license": "MIT",
   "devDependencies": {
@@ -25,7 +26,10 @@
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-thirdparty-search": "^1.0.2",
     "vuepress-plugin-zooming": "^1.1.7",
-    "blog": "^1.12.8",
-    "yamljs": "^0.3.0"
+    "yamljs": "^0.3.0",
+    "vuepress-theme-vdoing": "^1.12.8",
+    "fs-extra": "^11.1.0"
+  },
+  "dependencies": {
   }
 }
