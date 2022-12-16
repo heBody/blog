@@ -20,5 +20,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: marster
+        # BRANCH: marster
         FOLDER: docs/.vuepress/dist
