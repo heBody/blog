@@ -12,6 +12,7 @@
     "copy": "node ./utils/copyDist.js"
   },
   "license": "MIT",
+  "homepage": "https://heBody.github.io/blog",
   "devDependencies": {
     "dayjs": "^1.9.7",
     "inquirer": "^7.1.0",
