@@ -21,4 +21,4 @@ jobs:
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: marster
-        FOLDER: docs\.vuepress\dist
+        FOLDER: docs/.vuepress/dist
